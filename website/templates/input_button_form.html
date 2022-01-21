@@ -1,0 +1,149 @@
+{%extends "layout.html"%}
+{%block content%}
+<div xmlns="http://www.w3.org/1999/html">
+    <script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+    </script> 
+
+<H2>Entry type:</H2>
+
+<div>
+    <label>
+      <button type="button" class="btn btn-outline-info btn-md" data-toggle="modal" data-target="#Text_Title">Text and Title</button>
+
+      </label>
+               
+    <label>
+      <button type="button" class="btn btn-outline-info btn-md" data-toggle="modal" data-target="#Only_URL">Only URL</button>
+    </label>
+               
+    <label>
+      <button type="button" class="btn btn-outline-info btn-md" data-toggle="modal" data-target="#Image">Image</button>
+    </label>
+
+</div>
+<div class="container">
+  <div class="col">
+
+    <!--==============================Title+ text================================================= -->
+
+
+    <div class="modal fade" id="Text_Title" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Text and title</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form class= "Text_Title selectt", method="POST", action = "{{url_for('result',type = 'text')}}">
+              <fieldset>
+                  <div class = ''>
+              {{text_title_form.title.label (class="form-control-label")}}
+              {{text_title_form.title(class="form-control form-control-lg")}}
+                  </div>
+                  <div>
+              {{text_title_form.text.label (class="form-control-label")}}
+              {{text_title_form.text (class="form-control form-control-lg")}}
+                      </div>
+              </fieldset>
+              <br>
+              {{text_title_form.submit(class="btn btn-outline-info")}}
+          </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+    <div class="container">
+  <div class="col">
+    <!--===================================URL============================================ -->
+    
+
+    <div class="modal fade" id="Only_URL" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">URL search</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form class= "Only_URL selectt", method="POST", action = "{{url_for('result',type = 'url')}}">
+              <fieldset>
+                  <div>
+              {{URL_form.URL.label (class="form-control-label")}}
+              {{URL_form.URL(class="form-control form-control-lg")}}
+                  </div>
+      
+              </fieldset>
+              <br>
+              {{URL_form.submit(class="btn btn-outline-info")}}
+          </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+  </div>
+    </div>
+<div class="container">
+  <div class="col">
+<!--======================================Image========================================= -->
+
+<div class="modal fade" id="Image" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Image file</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class= "Image selectt", method="POST", action = "{{url_for('result', type = 'image')}}">
+          <fieldset>
+              <div class="form-group">
+          {{image_form.image.label(class="form-control-label")}}
+  
+          {{image_form.image(class="btn btn-outline-info")}}
+              </div>
+          </fieldset>
+          <br>
+          {{image_form.submit(class="btn btn-outline-info")}}
+      </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  </div>
+ </div>
+
+    
+
+
+{%endblock content%}
