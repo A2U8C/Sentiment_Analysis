@@ -85,8 +85,8 @@ Abstract -- Sentiment analysis can be defined as a process that automates mining
 CHAPTER 3: CONCEPTUAL SYSTEM DESIGN
 
 # 3.1 Conceptual system diagram
-
-![Conceptual_Diagram](Images/Conceptual_Diagram.PNG)
+![Conceptual_Diagram](Images/Conceptual_Diagram.png)
+<br/>
 
 				Fig 1.Conceptual Diagram
 
@@ -110,49 +110,51 @@ Modelling is the process of representing the patterns in an effective manner and
 
 3.2 Design of Modules in Detail
 1.Load Data
-
+<br/>
+![Load_data](Images/Load_data.png)
+<br/>
 2.Clean Data
-
-
-
-
-
+<br/>
+![clean_data](Images/clean_data.png)
+<br/>
 
 
 3.Feature Engineering
-
-
+<br/>
+![Feature_Engineering](Images/Feature_Engineering.png)
+<br/>
 
 4.Data Analysis
+<br/>
+![Data_Analysis](Images/Data_Analysis.png)
+<br/>
+
 
 5.Modelling Reviews
-
+<br/>
+![Modelling_Reviews](Images/Modelling_Reviews.png)
+<br/>
 
 CHAPTER 4: IMPLEMENTATION AND EVALUATION
 4.1 Implementation
 Determining Subjectivity and Polarity of tweets
-
+<br/>
+![Sub_Pol](Images/Sub_Pol.png)
+<br/>
 
 
 
 
 User Interface:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+![UI1](Images/UI1.jpg)
+<br/>
+<br/>
+![UI2](Images/UI2.jpg)
+<br/>
+<br/>
+![UI3](Images/UI3.jpg)
+<br/>
 
 
 
@@ -161,14 +163,24 @@ User Interface:
 
 4.2 Evaluation 
 WordCloud:
-
-
+<br/>
+![WordCloud](Images/WordCloud.jpg)
+<br/>
+<br/>
+![WordCloud2](Images/WordCloud2.jpg)
+<br/>
 
 
 ROC Curve:
+<br/>
+![ROC_Curve](Images/ROC_Curve.png)
+<br/>
+
 
 Precision Recall Curve:
-
+<br/>
+![Precision_Recall](Images/Precision_Recall.png)
+<br/>
  
 
 
